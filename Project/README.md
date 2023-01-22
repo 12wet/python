@@ -72,3 +72,9 @@ Obsługiwane endpointy:
 10. ```DELETE "/movies/{director}/delete"```  
   Usuwa wszystkie filmy danego reżysera  
 
+<br>
+<br>
+Z endpointów można korzystać np. przy pomocy komendy 'curl'.
+Aplikacja zawiera również dokumentację Swagger UI pod endpointem:   
+```GET "/docs"``` 
+Można przy jej pomocy wygodnie testować dostępne endpointy.
