@@ -27,7 +27,7 @@ W razie problemów przy instalacji należy skorzystać z flagi ```--user```
 Aplikacja obsługuje 10 endpointów.
 
 UWAGA! Tytuły filmów oraz imiona i nazwiska reżyserów podajemy w lower case, bez kropek,  
-a whitespace deklarujemy jako "_" np.:
+a whitespace deklarujemy jako "_" np.:  
 ```John G. Avildsen``` -> ```john_gulibert_avildsen``` lub ```john_g_avildsen```
 
 Obsługiwane endpointy:
