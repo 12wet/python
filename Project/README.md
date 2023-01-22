@@ -32,43 +32,43 @@ a whitespace deklarujemy jako "_" np.:
 
 Obsługiwane endpointy:
   
-```GET "/movies"```  
-Pobiera listę wszystkich filmów.  
+1. ```GET "/movies"```  
+  Pobiera listę wszystkich filmów.  
   
   
-```GET "/movies/{director}"```  
-Pobiera listę wszystkich filmów danego reżysera  
+2. ```GET "/movies/{director}"```  
+  Pobiera listę wszystkich filmów danego reżysera  
   
   
-```GET "/movies/of_date/{date}"```  
-Pobiera listę wszystkich filmów wydanych konkretnego dnia  
+3. ```GET "/movies/of_date/{date}"```  
+  Pobiera listę wszystkich filmów wydanych konkretnego dnia  
   
   
-```GET "/movie/{id}"```  
-Pobiera film o danym id  
+4. ```GET "/movie/{id}"```  
+  Pobiera film o danym id  
   
   
-```GET "/movie/of_title/{title}"```  
-Pobiera film o danym tytule  
+5. ```GET "/movie/of_title/{title}"```  
+  Pobiera film o danym tytule  
   
   
-```POST "/movie/new"```  
-Wysyła nowy film, konieczne jest załączenie Jsonowej definicji nowego filmu np:  
-```{"title":"Rocky", "release_date":"1976-12-21", "director":"John Guilbert Avildsen"}```
+6. ```POST "/movie/new"```  
+  Wysyła nowy film, konieczne jest załączenie Jsonowej definicji nowego filmu np:  
+  ```{"title":"Rocky", "release_date":"1976-12-21", "director":"John Guilbert Avildsen"}```
   
   
-```DELETE "/movie/{id}/delete"```  
-Usuwa film o danym id
+7. ```DELETE "/movie/{id}/delete"```  
+  Usuwa film o danym id
   
   
-```DELETE "/movie/of_title/{title}/delete"```  
-Usuwa film o danym tytule  
+8. ```DELETE "/movie/of_title/{title}/delete"```  
+  Usuwa film o danym tytule  
   
   
-```DELETE "/movies/of_date/{date}/delete"```  
-Usuwa wszystkie filmy wydane konkretnego dnia  
+9. ```DELETE "/movies/of_date/{date}/delete"```  
+  Usuwa wszystkie filmy wydane konkretnego dnia  
   
   
-```DELETE "/movies/{director}/delete"```  
-Usuwa wszystkie filmy danego reżysera  
+10. ```DELETE "/movies/{director}/delete"```  
+  Usuwa wszystkie filmy danego reżysera  
 
