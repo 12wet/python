@@ -53,7 +53,7 @@ Obsługiwane endpointy:
   
   
 6. ```POST "/movie/new"```  
-  Wysyła nowy film, konieczne jest załączenie Jsonowej definicji nowego filmu np:  
+  Wysyła nowy film, konieczne jest załączenie Jsonowej instancji nowego filmu np:  
   ```{"title":"Rocky", "release_date":"1976-12-21", "director":"John Guilbert Avildsen"}```
   
   
