@@ -35,30 +35,39 @@ Obsługiwane endpointy:
 ```GET "/movies"```  
 Pobiera listę wszystkich filmów.
 
+
 ```GET "/movies/{director}"```  
 Pobiera listę wszystkich filmów danego reżysera
+
 
 ```GET "/movies/of_date/{date}"```  
 Pobiera listę wszystkich filmów wydanych konkretnego dnia
 
+
 ```GET "/movie/{id}"```  
 Pobiera film o danym id
+
 
 ```GET "/movie/of_title/{title}"```  
 Pobiera film o danym tytule
 
+
 ```POST "/movie/new"```  
-Wysyła nowy film, konieczne jest załączenie Jsonowej definicji nowego filmu np:
-{"title":"Rocky", "release_date":"1976-12-21", "director":"John Guilbert Avildsen"}
+Wysyła nowy film, konieczne jest załączenie Jsonowej definicji nowego filmu np:  
+```{"title":"Rocky", "release_date":"1976-12-21", "director":"John Guilbert Avildsen"}```
+
 
 ```DELETE "/movie/{id}/delete"```  
 Usuwa film o danym id
 
+
 ```DELETE "/movie/of_title/{title}/delete"```  
 Usuwa film o danym tytule
 
+
 ```DELETE "/movies/of_date/{date}/delete"```  
 Usuwa wszystkie filmy wydane konkretnego dnia
+
 
 ```DELETE "/movies/{director}/delete"```  
 Usuwa wszystkie filmy danego reżysera
