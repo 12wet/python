@@ -12,7 +12,8 @@ movies_database.db - zawiera bazę danych
 
 Aplikację urochamiamy za pomocą komendy: 
 
-  ```python -m uvicorn controller:app --reload```
+  ```python -m uvicorn controller:app --reload```  
+Gdzie controller to nazwa pliku uruchamiającego aplikację.
   
 Do uruchomienia aplikacji potrzebne są nam zainstalowane biblioteki FastAPI oraz Uvicorn w wersji standard.  
 Aby je zainstalować wykonujemy:
@@ -22,15 +23,43 @@ Aby je zainstalować wykonujemy:
 
 W razie problemów przy instalacji należy skorzystać z flagi ```--user```
 
-Aplikacja obsługuje 10 endpointów:
+  
+Aplikacja obsługuje 10 endpointów.
 
-```GET "/movies"
-```GET "/movies/{director}"
-```@app.get("/movies/of_date/{date}")
-```@app.get("/movie/{id}")
-```@app.get("/movie/of_title/{title}")
-```@app.post("/movie/new")
-```@app.delete("/movie/{id}/delete")
-```@app.delete("/movie/of_title/{title}/delete")
-```@app.delete("/movies/of_date/{date}/delete")
-```@app.delete("/movies/{director}/delete")
+UWAGA! Tytuły filmów oraz imiona i nazwiska reżyserów podajemy w lower case, bez kropek,  
+a whitespace deklarujemy jako "_" np.:
+```John G. Avildsen``` -> ```john_gulibert_avildsen``` lub ```john_g_avildsen```
+
+Obsługiwane endpointy:
+
+```GET "/movies"```  
+Pobiera listę wszystkich filmów.
+
+```GET "/movies/{director}"```  
+Pobiera listę wszystkich filmów danego reżysera
+
+```GET "/movies/of_date/{date}"```  
+Pobiera listę wszystkich filmów wydanych konkretnego dnia
+
+```GET "/movie/{id}"```  
+Pobiera film o danym id
+
+```GET "/movie/of_title/{title}"```  
+Pobiera film o danym tytule
+
+```POST "/movie/new"```  
+Wysyła nowy film, konieczne jest załączenie Jsonowej definicji nowego filmu np:
+{"title":"Rocky", "release_date":"1976-12-21", "director":"John Guilbert Avildsen"}
+
+```DELETE "/movie/{id}/delete"```  
+Usuwa film o danym id
+
+```DELETE "/movie/of_title/{title}/delete"```  
+Usuwa film o danym tytule
+
+```DELETE "/movies/of_date/{date}/delete"```  
+Usuwa wszystkie filmy wydane konkretnego dnia
+
+```DELETE "/movies/{director}/delete"```  
+Usuwa wszystkie filmy danego reżysera
+
