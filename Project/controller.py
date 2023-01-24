@@ -23,7 +23,7 @@ async def listAllByDirector(director: str):
         
 
 @app.get("/movies/of_date/{date}")
-async def listAllByDirector(date: str): 
+async def listAllByDate(date: str): 
     return rep.movies_date(date)
 
 
